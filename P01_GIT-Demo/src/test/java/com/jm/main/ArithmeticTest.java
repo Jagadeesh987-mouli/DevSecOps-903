@@ -6,11 +6,11 @@ import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-public class AppTest {
-	private static App a;
+public class ArithmeticTest {
+	private static Arithmetic a;
 	@BeforeAll
 	public static void setupOnce() {
-		a = new App();
+		a = new Arithmetic();
 	}
     @Test
     public void testSumWithPositiveValues() {
@@ -33,6 +33,14 @@ public class AppTest {
         int x = 100;
         int y = -200;
         int expected = -100;
+        int actual = a.sum(x, y);
+        assertEquals(expected, actual);
+    }
+    @Test
+    public void testSumWithZeroes() {
+        int x = 0;
+        int y = 0;
+        int expected = 0;
         int actual = a.sum(x, y);
         assertEquals(expected, actual);
     }
