@@ -12,8 +12,7 @@ public class UPIPaymentService
 	private String oDestAcNo;
      public String sendMoney(String srcAcNo, String destAcNo, double amount)
      {
-    	 System.out.println(oDestAcNo+"     "+oSrcAcNo);
-    	 if(srcAcNo.equals(oSrcAcNo) && destAcNo.equals(oDestAcNo)) {
+       	 if(srcAcNo.equals(oSrcAcNo) && destAcNo.equals(oDestAcNo)) {
     		 return "Rs. "+amount+" sent to Account No : "+destAcNo; 
     	 }
     	 else {
