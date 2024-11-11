@@ -19,4 +19,7 @@ public class UPIPaymentService
     		 return "Error in sending Rs. "+amount+" to Account No : "+destAcNo; 
     	 }
      }
+     public void checkBalance() {
+    	 
+     }
 }
