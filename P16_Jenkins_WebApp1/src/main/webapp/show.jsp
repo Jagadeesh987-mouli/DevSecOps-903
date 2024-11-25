@@ -12,5 +12,6 @@
     %>
     <h1>Date and Time ::<%= d %></h1>
     <a href="index.html">Home</a>
+    <h1 style="color:blue; text-align:center;">Mouli</h1>
 </body>
 </html>
